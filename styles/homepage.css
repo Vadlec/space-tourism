@@ -1,0 +1,127 @@
+@media only screen and (min-width: 1224px) {
+  .homepage {
+    background-image: url("../assets/home/background-home-desktop.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 10vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+  }
+
+  .hero-left {
+    width: 50%;
+  }
+  .hero-right {
+    width: 50%;
+  }
+  .homepage-mainButton {
+    width: 75%;
+    height: 75%;
+    background-color: var(--light);
+    border-radius: 50%;
+    display: block;
+    transition: 1s;
+    color: var(--dark) !important;
+  }
+  .homepage-mainButton h4 {
+    color: var(--dark) !important;
+  }
+  .homepage-mainButton:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0 50px rgba(255, 255, 255, 0.2);
+    background-color: var(--white);
+  }
+  .outerCircle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .circleContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .welcomeText {
+    color: white;
+  }
+  .homepage-mainButton h4 {
+    opacity: 1;
+    color: black !important;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1223px) {
+  /* Ipad to pc */
+  .homepage {
+    background-image: url("../assets/home/background-home-tablet.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .homepage-mainButton {
+    width: 25vw;
+    height: 25vw;
+    background-color: var(--white);
+    border-radius: 50%;
+    display: block;
+    transition: 1s;
+    opacity: 1;
+    color: var(--dark) !important;
+  }
+  .homepage-mainButton h4 {
+    opacity: 1;
+    color: black !important;
+  }
+}
+
+@media only screen and (max-device-width: 767px) {
+  /* Styles */
+
+  .homepage {
+    background-image: url("../assets/home/background-home-mobile.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 17vh;
+    padding-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .homepage-mainButton {
+    width: 40vw;
+    height: 40vw;
+    background-color: var(--white);
+    border-radius: 50%;
+    display: block;
+    transition: 1s;
+
+    color: var(--dark) !important;
+  }
+  .homepage-mainButton h4 {
+    opacity: 1;
+    color: black !important;
+  }
+}

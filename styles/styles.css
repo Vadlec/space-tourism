@@ -1,0 +1,521 @@
+:root {
+  --dark: #0b0d17;
+  --light: #d0d6f9;
+  --white: #ffffff;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+@media only screen and (min-width: 1224px) {
+  .mobile-navigation {
+    display: none !important;
+  }
+  #mobile-nav-opener {
+    display: none !important;
+  }
+  h1 {
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-size: 150px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  h2 {
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 100px;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  h3 {
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 56px;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  h4 {
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-size: 32px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    margin: 0;
+    padding: 0;
+    color: white;
+    display: inline !important;
+  }
+  h5 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 4.75px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    color: white;
+  }
+  p {
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    font-size: 18px;
+    color: white;
+  }
+  a {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .subheading-1 {
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: white;
+    display: inline;
+    text-transform: uppercase;
+  }
+  .subheading-2 {
+    font-weight: 400;
+    color: white;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 14px;
+    letter-spacing: 2.35px;
+    text-transform: uppercase;
+  }
+  .Nav-Text {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 2.7px;
+    height: 100%;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+    border-bottom: 2px solid transparent;
+  }
+  .Nav-Text-active {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 2.7px;
+    height: 100%;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+  }
+  .Nav-Text:hover {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+  }
+  .Nav-Text .active {
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+  }
+  .nav-text-number {
+    font-size: 18px;
+    font-weight: 800;
+  }
+  .navigation-container {
+    position: absolute;
+    top: 30px;
+    width: 100vw;
+    padding-left: 10vw;
+    align-items: center;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navigation {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 10vw;
+    padding-left: 5vw;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+
+    align-items: center;
+  }
+
+  .divider {
+    position: relative;
+    height: 1px;
+    background-color: var(--light);
+    opacity: 0.4;
+    left: 40px;
+    width: 100%;
+  }
+  .nav-image-container {
+    display: flex;
+    width: 40%;
+    align-items: center;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1223px) {
+  /* Ipad to pc */
+  .mobile-navigation {
+    display: none !important;
+  }
+  #mobile-nav-opener {
+    display: none !important;
+  }
+  .nav-image img {
+    height: 40px;
+    width: 40px;
+  }
+  h1 {
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-size: 150px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  h2 {
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 80px;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  h3 {
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  h4 {
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0.5;
+    margin: 0;
+    padding: 0;
+    color: white;
+    display: inline !important;
+  }
+  h5 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 3.38px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    color: white;
+  }
+  p {
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    font-size: 16px;
+    color: white;
+  }
+  a {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .subheading-1 {
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    display: inline;
+    text-transform: uppercase;
+  }
+  .subheading-2 {
+    font-weight: 400;
+    color: white;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+  }
+  .Nav-Text {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 2.36px;
+    height: 100%;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+    border-bottom: 2px solid transparent;
+  }
+  .Nav-Text-active {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 2.36px;
+    height: 100%;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+  }
+  .Nav-Text:hover {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+  }
+  .Nav-Text .active {
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+  }
+  .nav-text-number {
+    display: none;
+    font-size: 16px;
+    font-weight: 800;
+  }
+  .navigation-container {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    padding-left: 10vw;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    align-items: center;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navigation {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .nav-image-container {
+    display: flex;
+    width: 70%;
+    align-items: center;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+  }
+}
+
+@media only screen and (max-device-width: 767px) {
+  /* Styles */
+  h1 {
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-size: 80px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  h2 {
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 56px;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  h3 {
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  h4 {
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    margin: 0;
+    padding: 0;
+    color: white;
+    display: inline !important;
+  }
+  h5 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    color: white;
+  }
+  p {
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 15px;
+    color: white;
+  }
+  a {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .subheading-1 {
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    display: inline;
+    text-transform: uppercase;
+  }
+  .page-title {
+    font-weight: 400;
+    color: white;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+  }
+  .subheading-2 {
+    font-weight: 400;
+    color: white;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 14px;
+    letter-spacing: 2.35px;
+    text-transform: uppercase;
+  }
+  .nav-image img {
+    height: 20px;
+    width: 20px;
+  }
+  .mobile-navigation {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(19, 21, 36, 0.9);
+    backdrop-filter: blur(7px);
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  #mobile-nav-opener {
+    color: white;
+    padding-right: 10vw;
+  }
+  .mobile-navigation .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: white;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .Nav-Text {
+    font-family: "Barlow Condensed", sans-serif;
+    padding: 8px 8px 8px 32px;
+    transition: 0.3s;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 2.7px;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+    border-bottom: 2px solid transparent;
+  }
+  .Nav-Text-active {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 2.7px;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+  }
+  .Nav-Text:hover {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+  }
+  .Nav-Text .active {
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+  }
+  .nav-text-number {
+    font-family: "Barlow Condensed", sans-serif;
+
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 2.7px;
+  }
+  .navigation-container {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    width: 100vw;
+    padding-left: 10vw;
+    align-items: center;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navigation {
+    display: none !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 10vw;
+    padding-left: 5vw;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .nav-image-container {
+    display: flex;
+    /* width: 40%;*/
+    align-items: center;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+  }
+}

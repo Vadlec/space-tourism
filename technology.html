@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/technology.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <title>Space tourism website | Technology</title>
+  </head>
+
+  <body>
+    <div class="navigation-container">
+      <div class="nav-image-container">
+        <a class="nav-image" href="index.html">
+          <img src="./assets/shared/logo.svg" alt="Flowers in Chania" />
+        </a>
+        <div class="divider"></div>
+      </div>
+      <nav class="navigation">
+        <a class="Nav-Text" href="index.html"
+          ><p class="nav-text-number">00&nbsp;</p>
+          HOME</a
+        >
+        <a class="Nav-Text" href="destination.html"
+          ><p class="nav-text-number">01&nbsp;</p>
+          DESTINATION</a
+        >
+        <a class="Nav-Text" href="crew.html"
+          ><p class="nav-text-number">02&nbsp;</p>
+          CREW</a
+        >
+        <a class="Nav-Text-active" href="technology.html"
+          ><p class="nav-text-number">03&nbsp;</p>
+          TECHNOLOGY</a
+        >
+      </nav>
+      <nav class="mobile-navigation" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a class="Nav-Text" href="index.html"
+          ><p class="nav-text-number">00&nbsp;</p>
+          HOME</a
+        >
+        <a class="Nav-Text" href="destination.html"
+          ><p class="nav-text-number">01&nbsp;</p>
+          DESTINATION</a
+        >
+        <a class="Nav-Text" href="crew.html"
+          ><p class="nav-text-number">02&nbsp;</p>
+          CREW</a
+        >
+        <a class="Nav-Text" href="technology.html"
+          ><p class="nav-text-number">03&nbsp;</p>
+          TECHNOLOGY</a
+        >
+      </nav>
+      <span
+        style="font-size: 30px; cursor: pointer"
+        onclick="openNav()"
+        id="mobile-nav-opener"
+        >&#9776;</span
+      >
+    </div>
+
+    <div class="technology-page">
+      <div class="page-title">
+        <h4>03&nbsp;&nbsp;</h4>
+        <p class="subheading-1">SPACE LAUNCH 101</p>
+      </div>
+      <div class="tech-container">
+        <div class="leftContainer">
+          <div class="tabs">
+            <button class="tab" onclick="openCity(event, 'first')" id="1">
+              1
+            </button>
+            <button class="tab" onclick="openCity(event, 'second')">2</button>
+            <button class="tab" onclick="openCity(event, 'third')">3</button>
+          </div>
+          <div class="info" id="first">
+            <p class="subheading-2">The Terminology...</p>
+            <h3>LAUNCH VEHICLE</h3>
+            <p>
+              A launch vehicle or carrier rocket is a rocket-propelled vehicle
+              used to carry a payload from Earth's surface to space, usually to
+              Earth orbit or beyond. Our WEB-X carrier rocket is the most
+              powerful in operation. Standing 150 metres tall, it's quite an
+              awe-inspiring sight on the launch pad!
+            </p>
+          </div>
+          <div class="info" id="second">
+            <p class="subheading-2">The Terminology...</p>
+            <h3>SPACEPORT</h3>
+            <p>
+              A spaceport or cosmodrome is a site for launching (or receiving)
+              spacecraft, by analogy to the seaport for ships or airport for
+              aircraft. Based in the famous Cape Canaveral, our spaceport is
+              ideally situated to take advantage of the Earth’s rotation for
+              launch.
+            </p>
+          </div>
+          <div class="info" id="third">
+            <p class="subheading-2">The Terminology...</p>
+            <h3>SPACE CAPSULE</h3>
+            <p>
+              A space capsule is an often-crewed spacecraft that uses a
+              blunt-body reentry capsule to reenter the Earth's atmosphere
+              without wings. Our capsule is where you'll spend your time during
+              the flight. It includes a space gym, cinema, and plenty of other
+              activities to keep you entertained.
+            </p>
+          </div>
+        </div>
+        <div class="rightContainer">
+          <img
+            src="./assets/technology/image-launch-vehicle-landscape.jpg"
+            alt="launch image"
+            class="tech-img"
+            id="first-img"
+          />
+          <img
+            src="./assets/technology/image-spaceport-landscape.jpg"
+            alt="spaceport"
+            class="tech-img"
+            id="second-img"
+          />
+          <img
+            src="./assets/technology/image-space-capsule-landscape.jpg"
+            alt="capsulse"
+            class="tech-img"
+            id="third-img"
+          />
+        </div>
+      </div>
+    </div>
+    <script>
+      function openCity(evt, tech) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("info");
+        techImages = document.getElementsByClassName("tech-img");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+          techImages[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tab");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(tech).style.display = "block";
+        var techImage = tech + "-img";
+        document.getElementById(techImage).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      document.getElementById("1").click();
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+  </body>
+</html>

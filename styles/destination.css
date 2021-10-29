@@ -1,0 +1,235 @@
+@media only screen and (min-width: 1224px) {
+  .destination {
+    background-image: url("../assets/destination/background-destination-desktop.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: flex;
+  }
+
+  .destination-container {
+    position: relative;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    height: 60%;
+    top: 5%;
+    width: 100%;
+  }
+  .destination-image {
+    height: 50vh;
+    width: 50vh;
+  }
+  .dest-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .dest-hero-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  .hero-left {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .hero-right {
+    width: 60%;
+  }
+  .info-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .dest-divider {
+    height: 1px;
+    background-color: var(--light);
+    opacity: 0.4;
+
+    width: 100%;
+  }
+  .tab {
+    overflow: hidden;
+  }
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    border-bottom: 1px solid transparent;
+    color: white;
+  }
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  /* Create an active/current tablink class */
+  .tab button.active {
+    border-bottom: 1px solid #fff;
+  }
+
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1224px) {
+  /* Ipad to pc */
+  .destination {
+    background-image: url("../assets/destination/background-destination-tablet.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 10vh;
+    padding-top: 15vh;
+    text-align: center;
+    display: flex;
+  }
+  .destination-image {
+    width: 40vw;
+    height: 40vw;
+    margin-top: 30px;
+  }
+
+  .tab {
+    margin-top: 30px;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 4px 6px;
+    transition: 0.3s;
+    border-bottom: 1px solid transparent;
+    color: white;
+  }
+  /* Create an active/current tablink class */
+  .tab button.active {
+    border-bottom: 1px solid #fff;
+  }
+
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+  }
+  .info-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .title-container {
+    width: 100%;
+    text-align: left;
+  }
+}
+@media only screen and (max-device-width: 767px) {
+  .destination {
+    background-image: url("../assets/destination/background-destination-mobile.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 15vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: flex;
+    text-align: center;
+  }
+  .dest-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .destination-image {
+    width: 45vw;
+    height: 45vw;
+    align-self: center;
+    margin-top: 30px;
+  }
+
+  .tab {
+    margin-top: 30px;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 4px 6px;
+    transition: 0.3s;
+    border-bottom: 1px solid transparent;
+    color: white;
+  }
+  .info {
+    font-weight: 400;
+    color: white;
+    font-family: "Bellefair", serif;
+    font-size: 28px;
+    text-transform: uppercase;
+  }
+  /* Create an active/current tablink class */
+  .tab button.active {
+    border-bottom: 1px solid #fff;
+  }
+
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+  }
+  .info-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .title-container {
+    width: 100%;
+    text-align: left;
+  }
+}

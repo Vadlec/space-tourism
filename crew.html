@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/crew.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <title>Space tourism website | Crew</title>
+  </head>
+
+  <body>
+    <div class="navigation-container">
+      <div class="nav-image-container">
+        <a class="nav-image" href="index.html">
+          <img src="./assets/shared/logo.svg" alt="Flowers in Chania" />
+        </a>
+        <div class="divider"></div>
+      </div>
+      <nav class="navigation">
+        <a class="Nav-Text" href="index.html"
+          ><p class="nav-text-number">00&nbsp;</p>
+          HOME</a
+        >
+        <a class="Nav-Text" href="destination.html"
+          ><p class="nav-text-number">01&nbsp;</p>
+          DESTINATION</a
+        >
+        <a class="Nav-Text-active" href="crew.html"
+          ><p class="nav-text-number">02&nbsp;</p>
+          CREW</a
+        >
+        <a class="Nav-Text" href="technology.html"
+          ><p class="nav-text-number">03&nbsp;</p>
+          TECHNOLOGY</a
+        >
+      </nav>
+      <nav class="mobile-navigation" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a class="Nav-Text" href="index.html"
+          ><p class="nav-text-number">00&nbsp;</p>
+          HOME</a
+        >
+        <a class="Nav-Text" href="destination.html"
+          ><p class="nav-text-number">01&nbsp;</p>
+          DESTINATION</a
+        >
+        <a class="Nav-Text" href="crew.html"
+          ><p class="nav-text-number">02&nbsp;</p>
+          CREW</a
+        >
+        <a class="Nav-Text" href="technology.html"
+          ><p class="nav-text-number">03&nbsp;</p>
+          TECHNOLOGY</a
+        >
+      </nav>
+      <span
+        style="font-size: 30px; cursor: pointer"
+        onclick="openNav()"
+        id="mobile-nav-opener"
+        >&#9776;</span
+      >
+    </div>
+    <div class="crew-page">
+      <div class="crew-hero-container">
+        <div class="hero-left">
+          <div class="my-text">
+            <h4>02&nbsp;&nbsp;</h4>
+            <p class="subheading-1">meet your crew</p>
+          </div>
+          <div class="crew-img-container" id="first-img">
+            <img
+              src="./assets/crew/image-douglas-hurley.png"
+              alt="Crew"
+              class="crew-image"
+            />
+          </div>
+          <div class="crew-img-container" id="second-img">
+            <img
+              src="./assets/crew/image-mark-shuttleworth.png"
+              alt="Crew"
+              class="crew-image"
+            />
+          </div>
+          <div class="crew-img-container" id="third-img">
+            <img
+              src="./assets//crew/image-victor-glover.png"
+              alt="Crew"
+              class="crew-image"
+            />
+          </div>
+          <div class="crew-img-container" id="fourth-img">
+            <img
+              src="./assets/crew/image-anousheh-ansari.png"
+              alt="Crew"
+              class="crew-image"
+            />
+          </div>
+          <div class="mobile-divider"></div>
+          <div class="extraClass">
+            <div class="crew-info" id="first-info">
+              <h4 class="title">COMMANDER<br /><br /></h4>
+              <h3>Douglas Hurley</h3>
+              <p class="crew-info-text">
+                Douglas Gerald Hurley is an American engineer, former Marine
+                Corps pilot and former NASA astronaut. He launched into space
+                for the third time as commander of Crew Dragon Demo-2.
+              </p>
+            </div>
+            <div class="crew-info" id="second-info">
+              <h4 class="title">Mission Specialist<br /><br /></h4>
+              <h3>MARK SHUTTLEWORTH</h3>
+              <p class="crew-info-text">
+                Mark Richard Shuttleworth is the founder and CEO of Canonical,
+                the company behind the Linux-based Ubuntu operating system.
+                Shuttleworth became the first South African to travel to space
+                as a space tourist.
+              </p>
+            </div>
+            <div class="crew-info" id="third-info">
+              <h4 class="title">PILOT<br /><br /></h4>
+              <h3>Victor Glover</h3>
+              <p class="crew-info-text">
+                Pilot on the first operational flight of the SpaceX Crew Dragon
+                to the International Space Station. Glover is a commander in the
+                U.S. Navy where he pilots an F/A-18.He was a crew member of
+                Expedition 64, and served as a station systems flight engineer.
+              </p>
+            </div>
+            <div class="crew-info" id="fourth-info">
+              <h4 class="title">Flight Engineer<br /><br /></h4>
+              <h3>Anousheh Ansari</h3>
+              <p class="crew-info-text">
+                Anousheh Ansari is an Iranian American engineer and co-founder
+                of Prodea Systems. Ansari was the fourth self-funded space
+                tourist, the first self-funded woman to fly to the ISS, and the
+                first Iranian in space.
+              </p>
+            </div>
+            <div class="tab">
+              <button
+                class="tablink-bullet"
+                onclick="openCity(event, 'first')"
+                id="first"
+              ></button>
+              <button
+                class="tablink-bullet"
+                onclick="openCity(event, 'second')"
+              ></button>
+              <button
+                class="tablink-bullet"
+                onclick="openCity(event, 'third')"
+              ></button>
+              <button
+                class="tablink-bullet"
+                onclick="openCity(event, 'fourth')"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function openCity(evt, item) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("crew-info");
+        images = document.getElementsByClassName("crew-img-container");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+          images[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablink-bullet");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        var info = item + "-info";
+        var img = item + "-img";
+        document.getElementById(img).style.display = "block";
+        document.getElementById(info).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      document.getElementById("first").click();
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+  </body>
+</html>

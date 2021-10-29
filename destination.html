@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/destination.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <title>Space tourism | Destination</title>
+  </head>
+
+  <body>
+    <div class="navigation-container">
+      <div class="nav-image-container">
+        <a class="nav-image" href="index.html">
+          <img src="./assets/shared/logo.svg" alt="Space Travel Logo" />
+        </a>
+        <div class="divider"></div>
+      </div>
+      <nav class="navigation">
+        <a class="Nav-Text" href="index.html"
+          ><p class="nav-text-number">00&nbsp;</p>
+          HOME</a
+        >
+        <a class="Nav-Text-active" href="destination.html"
+          ><p class="nav-text-number">01&nbsp;</p>
+          DESTINATION</a
+        >
+        <a class="Nav-Text" href="crew.html"
+          ><p class="nav-text-number">02&nbsp;</p>
+          CREW</a
+        >
+        <a class="Nav-Text" href="technology.html"
+          ><p class="nav-text-number">03&nbsp;</p>
+          TECHNOLOGY</a
+        >
+      </nav>
+      <nav class="mobile-navigation" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a class="Nav-Text" href="index.html"
+          ><p class="nav-text-number">00&nbsp;</p>
+          HOME</a
+        >
+        <a class="Nav-Text" href="destination.html"
+          ><p class="nav-text-number">01&nbsp;</p>
+          DESTINATION</a
+        >
+        <a class="Nav-Text" href="crew.html"
+          ><p class="nav-text-number">02&nbsp;</p>
+          CREW</a
+        >
+        <a class="Nav-Text" href="technology.html"
+          ><p class="nav-text-number">03&nbsp;</p>
+          TECHNOLOGY</a
+        >
+      </nav>
+      <span
+        style="font-size: 30px; cursor: pointer"
+        onclick="openNav()"
+        id="mobile-nav-opener"
+        >&#9776;</span
+      >
+    </div>
+    <div class="destination">
+      <div class="destination-container">
+        <div class="title-container">
+          <h4>01&nbsp;&nbsp;</h4>
+          <p class="subheading-1">PICK YOUR DESTINATION</p>
+        </div>
+        <div class="dest-hero-container">
+          <div class="planetImage" id="Moon-img">
+            <div class="dest-img-container">
+              <img
+                src="./assets/destination/image-moon.png"
+                alt="Space Travel Logo"
+                class="destination-image"
+              />
+            </div>
+          </div>
+          <div class="planetImage" id="Mars-img">
+            <div class="dest-img-container">
+              <img
+                src="./assets/destination/image-mars.png"
+                alt="Space Travel Logo"
+                class="destination-image"
+              />
+            </div>
+          </div>
+          <div class="planetImage" id="Europa-img">
+            <div class="dest-img-container">
+              <img
+                src="./assets/destination/image-europa.png"
+                alt="Space Travel Logo"
+                class="destination-image"
+              />
+            </div>
+          </div>
+          <div class="planetImage" id="Titan-img">
+            <div class="dest-img-container">
+              <img
+                src="./assets/destination/image-titan.png"
+                alt="Space Travel Logo"
+                class="destination-image"
+              />
+            </div>
+          </div>
+          <div class="hero-right">
+            <div class="tab">
+              <button
+                class="tablinks"
+                onclick="openCity(event, 'Moon')"
+                id="first"
+              >
+                <p class="subheading-2">MOON</p>
+              </button>
+              <button class="tablinks" onclick="openCity(event, 'Mars')">
+                <p class="subheading-2">MARS</p>
+              </button>
+              <button class="tablinks" onclick="openCity(event, 'Europa')">
+                <p class="subheading-2">EUROPA</p>
+              </button>
+              <button class="tablinks" onclick="openCity(event, 'Titan')">
+                <p class="subheading-2">TITAN</p>
+              </button>
+            </div>
+            <div id="Moon" class="tabcontent">
+              <h2>MOON</h2>
+              <p>
+                See our planet as you’ve never seen it before. A perfect
+                relaxing trip away to help regain perspective and come back
+                refreshed. While you’re there, take in some history by visiting
+                the Luna 2 and Apollo 11 landing sites.
+              </p>
+              <div class="dest-divider"></div>
+              <div class="info-container">
+                <div>
+                  <p class="subheading-2">AVG. DISTANCE</p>
+                  <p class="info">384,400 km</p>
+                </div>
+                <div>
+                  <p class="subheading-2">EST. TRAVEL TIME</p>
+                  <p class="info">3 days</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="Mars" class="tabcontent">
+              <h2>MARS</h2>
+              <p>
+                Don’t forget to pack your hiking boots. You’ll need them to
+                tackle Olympus Mons, the tallest planetary mountain in our solar
+                system. It’s two and a half times the size of Everest!
+              </p>
+              <div class="dest-divider"></div>
+              <div class="info-container">
+                <div>
+                  <p class="subheading-2">AVG. DISTANCE</p>
+                  <p class="info">225 mil. km</p>
+                </div>
+                <div>
+                  <p class="subheading-2">EST. TRAVEL TIME</p>
+                  <p class="info">9 months</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="Europa" class="tabcontent">
+              <h2>EUROPA</h2>
+              <p>
+                The smallest of the four Galilean moons orbiting Jupiter, Europa
+                is a winter lover’s dream. With an icy surface, it’s perfect for
+                a bit of ice skating, curling, hockey, or simple relaxation in
+                your snug wintery cabin.
+              </p>
+              <div class="dest-divider"></div>
+              <div class="info-container">
+                <div>
+                  <p class="subheading-2">AVG. DISTANCE</p>
+                  <p class="info">628 mil. km</p>
+                </div>
+                <div>
+                  <p class="subheading-2">EST. TRAVEL TIME</p>
+                  <p class="info">3 years</p>
+                </div>
+              </div>
+            </div>
+            <div id="Titan" class="tabcontent">
+              <h2>TITAN</h2>
+              <p>
+                The only moon known to have a dense atmosphere other than Earth,
+                Titan is a home away from home (just a few hundred degrees
+                colder!). As a bonus, you get striking views of the Rings of
+                Saturn.
+              </p>
+              <div class="dest-divider"></div>
+              <div class="info-container">
+                <div>
+                  <p class="subheading-2">AVG. DISTANCE</p>
+                  <p class="info">1.6 bil. km</p>
+                </div>
+                <div>
+                  <p class="subheading-2">EST. TRAVEL TIME</p>
+                  <p class="info">7 years</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function openCity(evt, planet) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        planetImages = document.getElementsByClassName("planetImage");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+          planetImages[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(planet).style.display = "block";
+        var planetImg = planet + "-img";
+        document.getElementById(planetImg).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      document.getElementById("first").click();
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+  </body>
+</html>

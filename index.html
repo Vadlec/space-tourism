@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/homepage.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+
+  <body>
+    <div class="navigation-container">
+      <div class="nav-image-container">
+        <a class="nav-image" href="index.html">
+          <img src="./assets/shared/logo.svg" alt="Flowers in Chania" />
+        </a>
+        <div class="divider"></div>
+      </div>
+      <nav class="navigation">
+        <a class="Nav-Text-active" href="index.html"
+          ><p class="nav-text-number">00&nbsp;</p>
+          HOME</a
+        >
+        <a class="Nav-Text" href="destination.html"
+          ><p class="nav-text-number">01&nbsp;</p>
+          DESTINATION</a
+        >
+        <a class="Nav-Text" href="crew.html"
+          ><p class="nav-text-number">02&nbsp;</p>
+          CREW</a
+        >
+        <a class="Nav-Text" href="technology.html"
+          ><p class="nav-text-number">03&nbsp;</p>
+          TECHNOLOGY</a
+        >
+      </nav>
+      <nav class="mobile-navigation" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a class="Nav-Text" href="index.html"
+          ><p class="nav-text-number">00&nbsp;</p>
+          HOME</a
+        >
+        <a class="Nav-Text" href="destination.html"
+          ><p class="nav-text-number">01&nbsp;</p>
+          DESTINATION</a
+        >
+        <a class="Nav-Text" href="crew.html"
+          ><p class="nav-text-number">02&nbsp;</p>
+          CREW</a
+        >
+        <a class="Nav-Text" href="technology.html"
+          ><p class="nav-text-number">03&nbsp;</p>
+          TECHNOLOGY</a
+        >
+      </nav>
+      <span
+        style="font-size: 30px; cursor: pointer"
+        onclick="openNav()"
+        id="mobile-nav-opener"
+        >&#9776;</span
+      >
+    </div>
+    <div class="container">
+      <div class="homepage">
+        <div class="hero-left">
+          <div class="welcomeText">
+            <h5>SO, YOU WANT TO TRAVEL TO</h5>
+            <h1>SPACE</h1>
+            <p>
+              Let’s face it; if you want to go to space, you might as well
+              genuinely go to outer space and not hover kind of on the edge of
+              it. Well sit back, and relax because we’ll give you a truly out of
+              this world experience!
+            </p>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="circleContainer">
+            <div class="outerCircle">
+              <button
+                class="homepage-mainButton"
+                onclick="location.href='destination.html'"
+                type="button"
+              >
+                <h4 style="color: black">EXPLORE</h4>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+  </body>
+</html>
