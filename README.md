@@ -12,8 +12,6 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
   - [Built with](#built-with)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -26,11 +24,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./Soution-ss/home.jpg)
+![]('/starter-code/Soution-ss/home.JPG')
+![]('/starter-code/Soution-ss/destination.JPG')
+![]('/starter-code/Soution-ss/crew.JPG')
+![]('/starter-code/Soution-ss/technology.JPG')
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://vadlec.github.io/space-tourism)
+- Live Site URL: [Space Tourism](https://vadlec.github.io/space-tourism)
 
 ## My process
 
