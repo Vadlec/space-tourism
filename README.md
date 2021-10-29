@@ -24,10 +24,11 @@ Users should be able to:
 
 ### Screenshot
 
+
 ![](/starter-code/Soution-ss/home.JPG)
 ![](/starter-code/Soution-ss/destination.JPG)
 ![](/starter-code/Soution-ss/crew.JPG)
-![](/starter-code/Soution-ss/technology.JPG)
+![](/starter-code/Soution-ss/tech.JPG)
 
 ### Links
 
